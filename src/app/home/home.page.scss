@@ -1,0 +1,13 @@
+.logito {
+  margin-top: 60px; 
+  width: 100%;
+  height: auto; /* Esto asegura que la imagen mantenga su proporción de aspecto */
+  display: block; /* Elimina espacios en blanco debajo de la imagen */ 
+}
+
+.progressBar {
+  width:auto;
+  margin: auto; /* Para centrar la barra en el contenido */
+  margin-top: 30px;
+  background-color: rgb(255, 217, 0);
+}

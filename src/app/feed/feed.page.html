@@ -1,0 +1,68 @@
+<app-header></app-header>
+
+
+<ion-content class="ion-padding">
+
+  <!-- Botón para volver al login-->
+  
+  <div>
+    <ion-button (click)="volverALogin()" class="flecha-btn" color="warning" expand="">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </div>
+
+  
+  <div class="ion-text-center">
+
+    <!-- Mensaje de Bienvenida y el nombre del usuario -->
+    <app-main-title title="¡Bienvenido {{usuario}}!" subtitle="¿Qué deseas hacer?"></app-main-title>
+
+
+
+    <!-- AVATAR DROSS-->
+    <ion-avatar>
+      <img alt="" src="https://pbs.twimg.com/media/E9k1SVXWQAYUP03?format=jpg&name=large" />
+
+      <!-- Componente para titulo -->
+      <app-main-title></app-main-title> 
+    </ion-avatar>
+    
+    <div>
+      <!-- Botón Asistencia-->
+      <div>
+        <ion-button (click)="verAsistencia()" class="botonAsistencias" color="warning">Asistencias</ion-button>
+      </div><br><br><br>
+
+      <!-- Botón Aceptar
+      <div>
+        <ion-button [routerLink]="['/home']" class="botonIngresar" color="warning">Aceptar</ion-button>
+      </div> -->
+
+      
+      <!-- Botón Escanear QR (Abrir la cámara)-->
+      <div>
+        <ion-button (click)="escanearQR()" class="botonCamara" color="warning">Escanear QR</ion-button>
+      </div>
+
+      <!-- Botón Generar QR -->
+      <div>
+        <ion-button (click)="generarCodigoQR()" class="botonQR" color="warning">Generar QR</ion-button>
+      </div>
+
+    </div>
+  </div>
+</ion-content>
+
+<ion-content class="ion-padding">
+
+  
+  <div class="ion-text-center">
+
+    <ion-button expand="" (click)="generarCodigoQR()" class="botonQR" color="warning">Generar Código QR</ion-button>
+<br>
+    <div *ngIf="codigoQR">
+      <img [src]="codigoQR" alt="Código QR generado">
+    </div>
+  </div>
+
+</ion-content> 

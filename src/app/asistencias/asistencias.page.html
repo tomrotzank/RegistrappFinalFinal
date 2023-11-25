@@ -1,0 +1,74 @@
+<app-header></app-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Botón para volver al login-->
+  <div>
+    <ion-button (click)="volverALogin()" class="flecha-btn" color="warning" expand="">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+  </div>
+  
+  <div class="ion-text-center">
+
+    <!-- Mensaje de Bienvenida y el nombre del usuario -->
+    <app-main-title title="Asistencias" subtitle="Puedes revisar el porcentaje de tus asistencias aqui"></app-main-title>
+
+    <ion-avatar>
+      <img alt="" src="https://pbs.twimg.com/media/E9k1SVXWQAYUP03?format=jpg&name=large" />
+
+      <!-- Componente para titulo -->
+      <app-main-title></app-main-title> 
+    </ion-avatar>
+
+  </div>
+  
+</ion-content>
+
+
+
+
+
+<ion-content class="tituloDivider">
+  <!-- Ítem de asistencias-->
+
+  <div>
+    <ion-item-divider color="warning" class="tituloDivider">
+      <ion-label>Ingeniería en Informática</ion-label>
+    </ion-item-divider>
+  </div>
+
+  </ion-content>
+
+
+  <ion-content class="item">
+    <ion-item-divider color="tertiary" class="item">
+      <ion-label>Arquitectura (ASY4131): 93.3%</ion-label><br>
+    </ion-item-divider>
+
+    <ion-item-divider color="tertiary" class="item">
+      <ion-label>Calidad De Software (CSY4111): 84%</ion-label>
+    </ion-item-divider>
+
+    <ion-item-divider color="tertiary" class="item">
+      <ion-label>Estadística Descriptiva (MAT4140): 75.9%</ion-label>
+    </ion-item-divider>
+
+    <ion-item-divider color="tertiary" class="item">
+      <ion-label>Inglés Intermedio (EAY4450): 85.7%</ion-label>
+    </ion-item-divider>
+
+    <ion-item-divider color="tertiary" class="item">
+      <ion-label>Proceso De Portafolio 4 (INI5111): 100%</ion-label>
+    </ion-item-divider>
+
+    <ion-item-divider color="tertiary" class="item">
+      <ion-label>Programación De Aplicaciones Móviles (APY4461): 83.3%</ion-label>
+    </ion-item-divider>
+
+    <ion-item-divider color="tertiary" class="item">
+      <ion-label>Ética Para El Trabajo (PGY4121): 100%</ion-label>
+    </ion-item-divider>
+
+</ion-content>
+
